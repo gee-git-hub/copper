@@ -9,6 +9,7 @@ import json
 import lzma
 from sklearn.ensemble import ExtraTreesRegressor, ExtraTreesClassifier
 import joblib
+import os
 
 # Set up page configuration for Streamlit
 st.set_page_config(page_title="Copper Modelling", page_icon='analytics.ico', layout="wide")
