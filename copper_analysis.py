@@ -203,11 +203,11 @@ with right:
                 else:
                     try:
                         # Attempt to load the model using LZMA compression
-                        with lzma.open('RandomForestRegressor_compressed.pkl', 'rb') as files:
+                        with lzma.open('RandomForestRegressor.pkl', 'rb') as files:
                             predict_model = pickle.load(files)
                     except lzma.LZMAError:
                         # Fallback to standard pickle loading if LZMA fails
-                        with open('RandomForestRegressor_compressed.pkl', 'rb') as file:
+                        with open('RandomForestRegressor.pkl', 'rb') as file:
                             predict_model = pickle.load(file)
 
                     # Check if the status is in the dictionary before encoding
