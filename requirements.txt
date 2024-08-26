@@ -2,7 +2,6 @@ streamlit
 streamlit_option_menu
 requests
 streamlit_lottie
-lzma
 scikit-learn
 joblib
 numpy
